@@ -26,7 +26,7 @@ const scrapeLogic = async (res) => {
     await page.type("input[placeholder='Search']", "automate beyond recorder");
 
     // Wait and click on first result
-    const searchResultSelector = "input[placeholder='Search']";
+    const searchResultSelector = ".gcsc-find-more-on-google-query";
     await page.waitForSelector(searchResultSelector);
     await page.click(searchResultSelector);
 
